@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+\begin{algorithm}[H]
+    \begin{center}
+    title of algorithm
+    \end{center}
+    \KwIn{input argument}
+    \KwOut{output argument}
+
+
+    initialize step;\ \tcc*[f]{init comment}\\\\
+    \While(\tcc*[f]{while comment}){condition true}{while body...}
+    \For(\tcc*[f]{for comment}){any case}{for body...}
+    \uIf(\tcc*[f]{if comment}){1}{if body...}
+    \uElseIf(\tcc*[f]{elseif comment}){2}{elseif body...}
+    \Else(\tcc*[f]{else comment}){else body...}
+\end{algorithm}
+]]></content>
+	<tabTrigger>alg</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>
