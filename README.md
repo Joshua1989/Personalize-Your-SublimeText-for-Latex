@@ -31,6 +31,7 @@ This repo aims at creating an efficient environment for Latex writing using Subl
     | snippet trigger | template                                     |
     |-----------------|----------------------------------------------|
     | plot            | pgfplots for function and sequence of points |
+    | alg             | algorithm                                    |
     | tikz-diag       | algebra diagram                              |
     | tikz-markov     | Markov chain                                 |
     | tikz-fg         | factor graph                                 |
