@@ -1,0 +1,35 @@
+<snippet>
+	<content><![CDATA[
+\begin{center}
+\tikzstyle{vertex}=[circle, draw, thick, minimum size=25pt,inner sep=0pt]
+\tikzstyle{edge} = [draw, thick, -]
+\tikzstyle{weight} = [font=\small]
+\begin{tikzpicture}[scale=1.5, auto, swap]
+    % First we draw the vertices
+    \foreach \pos/\name/\mathname in { {(0,2)/a/\$ X_a \$}, 
+                                        {(2,1)/b/\$ X_b \$}, 
+                                        {(4,1)/c/\$ X_c \$},
+                                        {(0,0)/d/\$ X_d \$}, 
+                                        {(3,0)/e/\$ X_e \$}, 
+                                        {(2,-1)/f/\$ X_f \$}, 
+                                        {(4,-1)/g/\$ X_g \$}}
+        \node[vertex] (\name) at \pos {\mathname};
+    % Connect vertices with edges and draw weights
+    \foreach \source/ \dest /\weight in { b/a/7, 
+                                          c/b/8,
+                                          d/a/5,
+                                          d/b/9,
+                                          e/b/7, 
+                                          e/c/5,
+                                          e/d/15,
+                                          f/d/6,
+                                          f/e/8,
+                                          g/e/9,
+                                          g/f/11}
+        \path[edge] (\source) -- node[weight] {\$\weight\$} (\dest);
+\end{tikzpicture}
+\end{center}
+]]></content>
+	<tabTrigger>tikz-graph</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>

@@ -1,0 +1,62 @@
+<snippet>
+	<content><![CDATA[
+\begin{center}
+% Set the overall layout of the tree
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+
+% Define styles for bags and leafs
+\tikzstyle{bag} = [text width=4em, text centered]
+\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+
+% The sloped option gives rotated edge labels. Personally
+% I find sloped labels a bit difficult to read. Remove the sloped options
+% to get horizontal labels. 
+\begin{tikzpicture}[grow=right, sloped]
+\node[bag] {Bag 1 \$4W, 3B\$}
+    child {
+        node[bag] {Bag 2 \$4W, 5B\$}        
+            child {
+                node[end, label=right:
+                    {\$P(W_1\cap W_2)=\frac{4}{7}\cdot\frac{4}{9}\$}] {}
+                edge from parent
+                node[above] {\$W\$}
+                node[below]  {\$\frac{4}{9}\$}
+            }
+            child {
+                node[end, label=right:
+                    {\$P(W_1\cap B_2)=\frac{4}{7}\cdot\frac{5}{9}\$}] {}
+                edge from parent
+                node[above] {\$B\$}
+                node[below]  {\$\frac{5}{9}\$}
+            }
+            edge from parent 
+            node[above] {\$W\$}
+            node[below]  {\$\frac{4}{7}\$}
+    }
+    child {
+        node[bag] {Bag 2 \$3W, 6B\$}        
+        child {
+                node[end, label=right:
+                    {\$P(B_1\cap W_2)=\frac{3}{7}\cdot\frac{3}{9}\$}] {}
+                edge from parent
+                node[above] {\$B\$}
+                node[below]  {\$\frac{3}{9}\$}
+            }
+            child {
+                node[end, label=right:
+                    {\$P(B_1\cap B_2)=\frac{3}{7}\cdot\frac{6}{9}\$}] {}
+                edge from parent
+                node[above] {\$W\$}
+                node[below]  {\$\frac{6}{9}\$}
+            }
+        edge from parent         
+            node[above] {\$B\$}
+            node[below]  {\$\frac{3}{7}\$}
+    };
+\end{tikzpicture}
+\end{center}
+]]></content>
+	<tabTrigger>tikz-tree</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>
