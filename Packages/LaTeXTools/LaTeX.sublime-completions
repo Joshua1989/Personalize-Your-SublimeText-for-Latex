@@ -1,0 +1,49 @@
+{
+        "scope": "text.tex.latex",
+
+        "completions":
+        [
+                // text fonts
+                { "trigger": "it", "contents": "\\textit{$1}$0"},
+                { "trigger": "bf", "contents": "\\textbf{$1}$0"},
+                { "trigger": "em", "contents": "\\emph{$1}$0"},
+                { "trigger": "tt", "contents": "\\texttt{$1}$0"},
+                { "trigger": "un", "contents": "\\underline{$1}$0"},
+                { "trigger": "on", "contents": "\\overline{$1}$0"},
+
+                // spacing
+                { "trigger": "bs", "contents": "\\bigskip"},
+                { "trigger": "ms", "contents": "\\medskip"},
+                { "trigger": "ss", "contents": "\\smallskip"},
+
+                // usepackage
+                { "trigger": "use", "contents": "\\usepackage"},
+        
+                // equation environments
+                { "trigger": "eq", "contents": "\\begin{equation*}\n\t$0\n\\end{equation*}"},
+                { "trigger": "eqn", "contents": "\\begin{equation}\n\t$0\n\\end{equation}"},
+                { "trigger": "al", "contents": "\\begin{IEEEeqnarray*}{lCl}\n\t$0\n\\end{IEEEeqnarray*}"},
+                { "trigger": "aln", "contents": "\\begin{IEEEeqnarray}{lCl}\n\t$0\n\\end{IEEEeqnarray}"},
+                { "trigger": "eqhead", "contents": "\\IEEEeqnarraymulticol{3}{l}{\n\t$0\n}\\nonumber\\\\\\* \\quad"},
+
+                // theorem environments
+                { "trigger": "thm", "contents": "\\begin{theorem}[$1]\n$2\n\\end{theorem}\n"},
+                { "trigger": "thmn", "contents": "\\begin{theorem*}[$1]\n$2\n\\end{theorem*}\n"},
+                { "trigger": "pps", "contents": "\\begin{proposition}[$1]\n$2\n\\end{proposition}\n"},
+                { "trigger": "ppsn", "contents": "\\begin{proposition*}[$1]\n$2\n\\end{proposition*}\n"},
+                { "trigger": "crl", "contents": "\\begin{corollary}[$1]\n$2\n\\end{corollary}\n"},
+                { "trigger": "crln", "contents": "\\begin{corollary*}[$1]\n$2\n\\end{corollary*}\n"},
+                { "trigger": "lem", "contents": "\\begin{lemma}[$1]\n$2\n\\end{lemma}\n"},
+                { "trigger": "lemn", "contents": "\\begin{lemma*}[$1]\n$2\n\\end{lemma*}\n"},
+                { "trigger": "def", "contents": "\\begin{definition}[$1]\n$2\n\\end{definition}\n"},
+                { "trigger": "defn", "contents": "\\begin{definition*}[$1]\n$2\n\\end{definition*}\n"},
+
+                { "trigger": "prf", "contents": "\\begin{proof} \\$\\,\\$ \n$0\n\\end{proof}\n"},
+                { "trigger": "sln", "contents": "\\begin{solution} \\$\\,\\$ \n$0\n\\end{solution}\n"},
+                { "trigger": "ex", "contents": "\\textbf{Example: } "},
+
+                // itemize and enumerate
+                { "trigger": "item", "contents": "\\begin{itemize}\n\\item \t$1 \n\\item \t$2 \n\\end{itemize}"},
+                { "trigger": "enum", "contents": "\\begin{enumerate}[$1]\n\\item \t$2 \n\\item \t$3 \n\\end{enumerate}"}
+        ]
+}

@@ -1,0 +1,102 @@
+{
+        "scope": "string.other.math.tex, string.other.math.latex, string.other.math.block.environment.latex",
+
+        "completions":
+        [
+                // Greek symbols
+                { "trigger": "a", "contents": "\\alpha" },
+                { "trigger": "b", "contents": "\\beta" },
+                { "trigger": "g", "contents": "\\gamma" },
+                { "trigger": "d", "contents": "\\delta" },
+		{ "trigger": "e", "contents": "\\epsilon" },
+		{ "trigger": "\\epsilon", "contents": "\\varepsilon" }, 
+		{ "trigger": "\\varepsilon", "contents": "\\epsilon" },
+		{ "trigger": "z", "contents": "\\zeta"},
+		{ "trigger": "h", "contents": "\\eta" },
+                { "trigger": "q", "contents": "\\theta" },
+                { "trigger": "\\theta", "contents": "\\vartheta" },
+                { "trigger": "\\vartheta", "contents": "\\theta" },
+                { "trigger": "i", "contents": "\\iota" },
+                { "trigger": "k", "contents": "\\kappa" },
+                { "trigger": "l", "contents": "\\lambda" },
+                { "trigger": "m", "contents": "\\mu" },
+                { "trigger": "n", "contents": "\\nu" },
+                { "trigger": "x", "contents": "\\xi" },
+                { "trigger": "p", "contents": "\\pi" },
+                { "trigger": "\\pi", "contents": "\\prime" },
+                { "trigger": "\\prime", "contents": "\\partial" },
+                { "trigger": "\\partial", "contents": "\\pi" },
+                { "trigger": "r", "contents": "\\rho" },
+                { "trigger": "s", "contents": "\\sigma" },
+                { "trigger": "t", "contents": "\\tau" },
+                { "trigger": "u", "contents": "\\upsilon" },        
+                { "trigger": "f", "contents": "\\phi" },
+                { "trigger": "\\phi", "contents": "\\varphi" }, 
+                { "trigger": "\\varphi", "contents": "\\phi" },
+                { "trigger": "c", "contents": "\\chi" },
+                { "trigger": "y", "contents": "\\psi" },
+                { "trigger": "w", "contents": "\\omega" },
+                { "trigger": "v", "contents": "\\digamma"},
+                { "trigger": "G", "contents": "\\Gamma" },
+                { "trigger": "D", "contents": "\\Delta" },
+		{ "trigger": "Q", "contents": "\\Theta" },
+                { "trigger": "L", "contents": "\\Lambda" },
+                { "trigger": "X", "contents": "\\Xi" },
+                { "trigger": "P", "contents": "\\Pi" },
+                { "trigger": "S", "contents": "\\Sigma" },
+                { "trigger": "F", "contents": "\\Phi" },
+                { "trigger": "Y", "contents": "\\Psi" },
+                { "trigger": "W", "contents": "\\Omega" },
+
+                // miscellaneous
+                { "trigger": "O", "contents": "\\emptyset" },
+                { "trigger": "sm", "contents": "\\setminus" },
+                { "trigger": "V", "contents": "\\forall\\," },
+                { "trigger": "E", "contents": "\\exists\\," },
+                { "trigger": "inf", "contents": "\\infty"},
+                { "trigger": "tx", "contents": "\\text{ $1 }$0"},
+
+                // dots
+                { "trigger": "ld", "contents": "\\ldots" },
+                { "trigger": "vd", "contents": "\\vdots" },
+                { "trigger": "dd", "contents": "\\ddots" },
+                { "trigger": "cd", "contents": "\\cdot" },
+                { "trigger": "\\cdot", "contents": "\\cdots" },
+                { "trigger": "\\cdots", "contents": "\\cdot"},
+
+                // spacing and arrows
+                { "trigger": "qd", "contents": "\\quad"},
+                { "trigger": "\\quad", "contents": "\\qquad"},
+                { "trigger": "\\qquad", "contents": "\\quad"},
+
+		{ "trigger": "LA", "contents": "\\Leftarrow"},
+		{ "trigger": "LLA", "contents": "\\Longleftarrow"},
+                { "trigger": "RA", "contents": "\\Rightarrow"},
+                { "trigger": "LRA", "contents": "\\Longrightarrow"},
+                { "trigger": "SO", "contents": "\\quad \\Longrightarrow \\quad"},
+		{ "trigger": "iff", "contents": "\\Leftrightarrow"},
+		{ "trigger": "IFF", "contents": "\\Longleftrightarrow"},
+                { "trigger": "UA", "contents": "\\uparrow"},
+		{ "trigger": "DA", "contents": "\\downarrow"},
+
+                // math fonts
+                { "trigger": "it", "contents": "\\mathit{$1}$0"},
+                { "trigger": "bf", "contents": "\\mathbf{$1}$0"},
+                { "trigger": "bb", "contents": "\\mathbb{$1}$0"},
+                { "trigger": "rm", "contents": "\\mathrm{$1}$0"},
+                { "trigger": "sf", "contents": "\\mathsf{$1}$0"},
+                { "trigger": "cal", "contents": "\\mathcal{$1}$0"},
+                { "trigger": "frak", "contents": "\\mathfrak{$1}$0"},
+
+                // braces
+                { "trigger": "rd", "contents": "\\rdbrs{ $1 }$0"},
+                { "trigger": "sq", "contents": "\\sqbrs{ $1 }$0"},
+                { "trigger": "cl", "contents": "\\clbrs{ $1 }$0"},
+                { "trigger": "rdv", "contents": "\\rdbrsv{ $1 }{ $2 }$0"},
+                { "trigger": "sqv", "contents": "\\sqbrsv{ $1 }{ $2 }$0"},
+                { "trigger": "clv", "contents": "\\clbrsv{ $1 }{ $2 }$0"},
+                { "trigger": "fr", "contents": "\\frac{$1}{$2}$0"},
+                { "trigger": "fd", "contents": "\\fracd{$1}{$2}$0"},
+                { "trigger": "fp", "contents": "\\fracp{$1}{$2}$0"}
+        ]
+}

@@ -1,0 +1,37 @@
+<snippet>
+	<content><![CDATA[
+\begin{center}
+\tikzstyle{var}=[circle, draw, thick, minimum size=25pt, inner sep=0pt, fill=yellow]
+\tikzstyle{fun}=[rectangle, draw, thick, minimum size=25pt, inner sep=0pt, fill=cyan]
+\tikzstyle{edge} = [draw, thick, -]
+\begin{tikzpicture}[scale=1, auto, swap]
+    % First we draw the variable nodes
+    \foreach \pos/\name/\mathname in {  {(0,0)/X1/\$ X_1 \$}, 
+                                        {(2,0)/X2/\$ X_2 \$}, 
+                                        {(4,0)/X3/\$ X_3 \$}, 
+                                        {(6,0)/X4/\$ X_4 \$}}
+        \node[var] (\name) at \pos {\mathname};
+    % Then we draw the function nodes
+    \foreach \pos/\name/\mathname in {  {(0,-2)/F1/\$ f_1 \$}, 
+                                        {(2,-2)/F2/\$ f_2 \$}, 
+                                        {(4,-2)/F3/\$ f_3 \$}, 
+                                        {(6,-2)/F4/\$ f_4 \$}}
+        \node[fun] (\name) at \pos {\mathname};
+    % Connect vertices with edges and draw weights
+    \foreach \source/ \dest in {  F1/X1,
+                                  F2/X1,
+                                  F2/X2,
+                                  F3/X1,
+                                  F3/X2,
+                                  F3/X3,
+                                  F4/X1,
+                                  F4/X2,
+                                  F4/X3,
+                                  F4/X4}
+        \path[edge] (\source) -- (\dest);
+\end{tikzpicture}
+\end{center}
+]]></content>
+	<tabTrigger>tikz-fg</tabTrigger>
+	<scope>text.tex.latex</scope>
+</snippet>
