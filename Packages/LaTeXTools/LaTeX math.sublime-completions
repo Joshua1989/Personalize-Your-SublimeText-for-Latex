@@ -97,6 +97,11 @@
                 { "trigger": "clv", "contents": "\\clbrsv{ $1 }{ $2 }$0"},
                 { "trigger": "fr", "contents": "\\frac{$1}{$2}$0"},
                 { "trigger": "fd", "contents": "\\fracd{$1}{$2}$0"},
-                { "trigger": "fp", "contents": "\\fracp{$1}{$2}$0"}
+                { "trigger": "fp", "contents": "\\fracp{$1}{$2}$0"},
+
+                // limit, argmax, argmin
+                { "trigger": "lim", "contents": "\\limit{${1:n} \\to ${2:\\infty}}$0"},
+                { "trigger": "amax", "contents": "\\argmax{$1 \\in $2}$0"},
+                { "trigger": "amin", "contents": "\\argmin{$1 \\in $2}$0"}
         ]
 }

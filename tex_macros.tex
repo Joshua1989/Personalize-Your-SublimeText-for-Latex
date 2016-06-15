@@ -68,8 +68,9 @@
 \DeclareMathOperator\arctanh{arctanh}
 
 % argmax and argmin
-\DeclareMathOperator*{\argmax}{arg\,max}
-\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand\limit[1]{\underset{#1}{\lim}}
+\newcommand\argmax[1]{\mathrm{arg}\,\underset{#1}{\max}}
+\newcommand\argmin[1]{\mathrm{arg}\,\underset{#1}{\min}}
 
 % Matrices
 \newcommand*\pmtx[1]{\begin{pmatrix}#1\end{pmatrix}}			% Matrix with round braces
