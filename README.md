@@ -1,6 +1,12 @@
 # Personalize-Your-SublimeText-for-Latex
 This repo aims at creating an efficient environment for Latex writing using Sublime Text 2/3 with LaTeXtools and Bracket Highlighter on OSX and Windows
 
+<p align="center">
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=HrB-V4KGqgs
+" target="_blank"><img src="https://github.com/Joshua1989/Personalize-Your-SublimeText-for-Latex/blob/master/demo.gif" 
+alt="IMAGE ALT TEXT HERE" width="395" height="240" border="10" /></a>
+</p>
+
 ## Features:
 1. Almost all frequently used packages are included: ams* for math-typing, tikz/pgf for drawing and plotting, algorithm2e for algorithm.
 2. All kinds for brackets are outline highlighted by different color, there are several useful shortcuts:
