@@ -480,6 +480,40 @@
 	        <string>#56FF00</string>
 	    </dict>
 	</dict>
+
+	<dict>
+	    <key>name</key>
+	    <string>LaTeX: Math Variable and Braces</string>
+	    <key>scope</key>
+	    <string>variable.other.math.tex, constant.character.parenthesis.tex, constant.character.bracket.tex, constant.character.brace.escape.tex, meta.group.brace.latex</string>
+	    <key>settings</key>
+	    <dict>
+	        <key>foreground</key>
+	        <string>#e0e000</string>
+	    </dict>
+	</dict>
+	<dict>
+	    <key>name</key>
+	    <string>LaTeX: Math Greek Variable</string>
+	    <key>scope</key>
+	    <string>keyword.symbol.greek.tex</string>
+	    <key>settings</key>
+	    <dict>
+	        <key>foreground</key>
+	        <string>#00ffee</string>
+	    </dict>
+	</dict>
+	<dict>
+	    <key>name</key>
+	    <string>LaTeX: Math Operators</string>
+	    <key>scope</key>
+	    <string>keyword.operator.math.tex</string>
+	    <key>settings</key>
+	    <dict>
+	        <key>foreground</key>
+	        <string>#dd2cdd</string>
+	    </dict>
+	</dict>
 	</array>
 	<key>uuid</key>
 	<string>D8D5E82E-3D5B-46B5-B38E-8C841C21347D</string>

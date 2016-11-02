@@ -1,5 +1,5 @@
 {
-        "scope": "text.tex.latex",
+        "scope": "text.tex.latex - (string.other.math, meta.environment.math)",
 
         "completions":
         [
@@ -22,8 +22,8 @@
                 // equation environments
                 { "trigger": "eq", "contents": "\\begin{equation*}\n\t$0\n\\end{equation*}"},
                 { "trigger": "eqn", "contents": "\\begin{equation}\n\t$0\n\\end{equation}"},
-                { "trigger": "al", "contents": "\\begin{IEEEeqnarray*}{lCl}\n\t$0\n\\end{IEEEeqnarray*}"},
-                { "trigger": "aln", "contents": "\\begin{IEEEeqnarray}{lCl}\n\t$0\n\\end{IEEEeqnarray}"},
+                { "trigger": "al", "contents": "\\begin{IEEEeqnarray*}{rCl}\n\t$0\n\\end{IEEEeqnarray*}"},
+                { "trigger": "aln", "contents": "\\begin{IEEEeqnarray}{rCl}\n\t$0\n\\end{IEEEeqnarray}"},
                 { "trigger": "eqhead", "contents": "\\IEEEeqnarraymulticol{3}{l}{\n\t$0\n}\\nonumber\\\\\\* \\quad"},
 
                 // theorem environments
@@ -40,10 +40,10 @@
 
                 { "trigger": "prf", "contents": "\\begin{proof} \\$\\,\\$ \n$0\n\\end{proof}\n"},
                 { "trigger": "sln", "contents": "\\begin{solution} \\$\\,\\$ \n$0\n\\end{solution}\n"},
-                { "trigger": "ex", "contents": "\\textbf{Example: } "},
+                { "trigger": "ex", "contents": "\\textbf{Example:} "},
 
                 // itemize and enumerate
-                { "trigger": "item", "contents": "\\begin{itemize}\n\\item \t$1 \n\\item \t$2 \n\\end{itemize}"},
-                { "trigger": "enum", "contents": "\\begin{enumerate}[$1]\n\\item \t$2 \n\\item \t$3 \n\\end{enumerate}"}
+                { "trigger": "item", "contents": "\\begin{itemize}\n\\item $1\n\\item $2\n\\end{itemize}"},
+                { "trigger": "enum", "contents": "\\begin{enumerate}[$1]\n\\item $2\n\\item $3\n\\end{enumerate}"}
         ]
 }

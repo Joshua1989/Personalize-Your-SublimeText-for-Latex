@@ -2,7 +2,7 @@
     // Toggle Global Enable
     {
         "keys": ["alt+super+e"],
-        "command": "bh_toggle_enable"
+        "command": "bh_toggle_high_visibility"
     },
 	// Go to left bracket
     {
@@ -66,5 +66,24 @@
                 "args": {"always_include_brackets": true}
             }
         }
+    },
+    // insert matching $
+    // note the "key": "selector" line!
+    { "keys": ["$"], "command": "insert_snippet", "args": {"contents": "\\$ $0 \\$"}, 
+    "context":  
+        [
+            { "key": "setting.command_mode", "operator": "equal", "operand": false },
+            { "key": "selector", "operator": "equal", "operand": "text.tex.latex" },
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+            // do not insert this if it is escaped
+            { "key": "preceding_text", "operator": "not_regex_contains", "operand": "(?:\\\\\\\\)*(?:\\\\|\\$)$", "match_all": true },
+            // don't insert, it inside math environments
+            { "key": "selector", "operator": "not_equal", "operand": "meta.environment.math, string.other.math", "match_all": true },
+            // don't insert, if there is an open dollar math environment at the end of the line
+            { "key": "eol_selector", "operator": "not_equal", 
+              "operand": "meta.environment.math.inline.dollar - punctuation.definition.string.end, string.other.math - punctuation.definition.string.end",
+              "match_all": true }
+        ] 
     }
 ]

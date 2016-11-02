@@ -5,6 +5,7 @@
 \usepackage{tikz,pgfplots,tkz-graph}
 \usepackage{listings,hyperref,float}
 \usepackage{epsfig,epstopdf,graphicx}
+\usepackage{enumerate}
 
 \pgfplotsset{compat=newest}
 \usetikzlibrary{positioning,matrix}
@@ -66,11 +67,12 @@
 \DeclareMathOperator\arcsinh{arcsinh}
 \DeclareMathOperator\arccosh{arccosh}
 \DeclareMathOperator\arctanh{arctanh}
+\DeclareMathOperator\sech{sech}
 
 % argmax and argmin
-\newcommand\limit[1]{\underset{#1}{\lim}}
-\newcommand\argmax[1]{\mathrm{arg}\,\underset{#1}{\max}}
-\newcommand\argmin[1]{\mathrm{arg}\,\underset{#1}{\min}}
+\newcommand\limit[1]{\underset{#1}{\lim}\,}
+\newcommand\argmax[1]{\mathrm{arg}\,\underset{#1}{\max}\,}
+\newcommand\argmin[1]{\mathrm{arg}\,\underset{#1}{\min}\,}
 
 % Matrices
 \newcommand*\pmtx[1]{\begin{pmatrix}#1\end{pmatrix}}			% Matrix with round braces
@@ -116,3 +118,28 @@
 \def\diag{\mathsf{diag}}
 \def\mse{\mathsf{mse}}
 \def\mmse{\mathsf{mmse}}
+
+\def\ee{\mathbbm{e}}
+\def\ii{\mathbbm{i}}
+\def\EE{\mathsf{E}}
+\def\FF{\mathsf{F}}
+\def\SS{\mathsf{S}}
+\def\UU{\mathsf{U}}
+\def\xx{\mathsf{x}}
+\def\pprime{{\prime\prime}}
+
+\newcommand{\KL}[2]{D\left( #1 \,\middle|\middle|\, #2 \right)}%                   ( | )
+
+\makeatletter
+\newcommand\ztag[1]{%
+\def\@currentlabel{#1}%
+\gdef\tmp{%
+\addtocounter{equation}{-1}%
+\def\theequation{#1}}%
+\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup
+\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup
+\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup
+\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup
+\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup\aftergroup
+\aftergroup
+\tmp\IEEEyesnumber}
