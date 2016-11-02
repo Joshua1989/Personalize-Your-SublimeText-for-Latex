@@ -485,7 +485,7 @@
 	    <key>name</key>
 	    <string>LaTeX: Math Variable and Braces</string>
 	    <key>scope</key>
-	    <string>variable.other.math.tex, constant.character.parenthesis.tex, constant.character.bracket.tex, constant.character.brace.escape.tex, meta.group.brace.latex</string>
+	    <string>variable.other.math.tex, constant.character.parenthesis.tex, constant.character.bracket.tex, constant.character.brace.escape.tex, text.tex.latex meta.environment.math punctuation.definition.group.brace</string>
 	    <key>settings</key>
 	    <dict>
 	        <key>foreground</key>
